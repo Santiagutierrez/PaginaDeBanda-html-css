@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    text-align: center;
+    background-color: #181616;
+}
+
+.grids-uno {
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    grid-template-rows: 80px auto auto;
+}
+
+.padre-flex {
+    grid-area: header;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: rgb(24, 22, 22);
+}
+
+nav {
+    grid-area: navbar;
+    display: inline-block;
+    display: flex;
+    color: rgb(221, 167, 167);
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    font-family: 'Jockey One', sans-serif;
+    padding: 30px;
+    font-size: 5px;
+    position: relative;
+    top: 7px;
+    color:  rgb(252, 238, 238);
+}
+
+.logo {
+    position: relative;
+    top: 1%;
+}
+a {
+    text-decoration: none;
+    color: rgb(228, 224, 222);
+    font-size: 20px;
+}
+
+main {
+    grid-area: main;
+    background-color:rgb(24, 22, 22) ;
+}
+
+.tituloprincipal {
+    font-family: 'Climate Crisis', cursive;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 60px;
+    display: block;
+    color: white;
+}
+.gifindex {
+    object-fit: cover;
+}
+
+h1 {
+    color: white;
+    font-family: 'Jockey One', sans-serif;
+    font-size: 50px;
+    padding: 40px;
+}
+
+.section1 {
+    padding: 50px;
+    color: rgb(252, 238, 238);
+    font-size: 13px;
+    font-family: 'Unbounded', cursive;
+    background-color:rgb(24, 22, 22);
+}
+
+.section2 {
+    padding: 50px;
+    color: rgb(252, 238, 238);
+    font-size: 13px;
+    font-family: 'Unbounded', cursive;
+    background-color:rgb(24, 22, 22);
+}
+
+.prensa {
+    font-family: 'Kanit', sans-serif;
+    font-size: 17px;
+}
+legend {
+    color: rgb(252, 238, 238);
+    font-family: 'Jockey One', sans-serif;
+}
+
+h2 {
+    color: rgb(252, 238, 238);
+    font-family: 'Jockey One', sans-serif;
+    font-size: 20px;
+    padding: 30px;
+}
+
+.actividad1 {
+    color:rgb(252, 238, 238);
+    font-size: 20px;
+    font-family: 'Jockey One', sans-serif;
+}
+
+fieldset {
+    font-family: 'Jockey One', sans-serif;
+    font-size: 14px;
+    color: rgb(228, 224, 222);
+    padding: 30px;
+    margin: 30px;
+}
+
+
+footer {
+    grid-area: footer;
+    padding: 10px;
+    border: 10px;
+    text-align: center;
+    background-color:rgb(24, 22, 22);
+    bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .grids-uno {
+        grid-template-areas:
+            "header header header"
+            "main main main"
+            "footer footer footer";
+            grid-template-columns: 150px;
+            grid-template-rows: auto auto;
+    }
+    .padre-flex{
+        justify-content: left;
+    }
+
+    h1 {
+        padding: 10px;
+    }
+
+    .videoyt {
+        width: 300px;
+    }
+
+    .imagenes {
+        width: 50px;
+        height: 400px;
+    }
+    
+    .enlacesnavmq {
+        width: 50px;
+    }
+    .tituloprincipal {
+        right: 22px;
+        bottom: 73px;
+    }
+    .logo {
+        left: 35px;
+    }
+}

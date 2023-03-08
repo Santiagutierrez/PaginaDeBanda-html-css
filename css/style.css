@@ -8,7 +8,7 @@ html {
     background-color: #181616;
 }
 
-.grids-uno {
+.gridsUno {
     display: grid;
     height: 100vh;
     grid-template-areas:
@@ -18,7 +18,7 @@ html {
     grid-template-rows: 80px auto auto;
 }
 
-.padre-flex {
+.padreFlex {
     grid-area: header;
     display: inline-block;
     display: flex;
@@ -72,7 +72,7 @@ main {
     display: block;
     color: white;
 }
-.gifindex {
+.gifIndex {
     object-fit: cover;
 }
 
@@ -83,14 +83,14 @@ h1 {
     padding: 40px;
 }
 
-.section1 {
+.seccionUno {
     padding: 50px;
     color: rgb(252, 238, 238);
     font-size: 13px;
     background-color:rgb(24, 22, 22);
 }
 
-.section2 {
+.seccionDos {
     padding: 50px;
     color: rgb(252, 238, 238);
     font-size: 13px;
@@ -101,6 +101,7 @@ h1 {
     font-family: 'Kanit', sans-serif;
     font-size: 17px;
 }
+
 legend {
     color: rgb(252, 238, 238);
     font-family: 'Jockey One', sans-serif;
@@ -113,7 +114,7 @@ h2 {
     padding: 30px;
 }
 
-.actividad1 {
+.actividadUno {
     color:rgb(252, 238, 238);
     font-size: 20px;
     font-family: 'Jockey One', sans-serif;
@@ -138,7 +139,7 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    .grids-uno {
+    .gridsUno {
         grid-template-areas:
             "header header header"
             "main main main"
@@ -146,7 +147,7 @@ footer {
             grid-template-columns: 150px;
             grid-template-rows: auto auto;
     }
-    .padre-flex{
+    .padreFlex{
         justify-content: left;
     }
 
@@ -154,7 +155,7 @@ footer {
         padding: 10px;
     }
 
-    .videoyt {
+    .videoYt {
         width: 300px;
     }
 
@@ -163,10 +164,11 @@ footer {
         height: 400px;
     }
     
-    .enlacesnavmq {
+    .enlacesNavMq {
         width: 50px;
     }
-    .tituloprincipal {
+    
+    .tituloPrincipal {
         right: 22px;
         bottom: 73px;
     }

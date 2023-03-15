@@ -1,11 +1,9 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+@import "./variables/variables";
+@import "./base/reset";
 
 html {
   text-align: center;
-  background-color: #181616;
+  background-color: $color-fondo;
 }
 
 .gridsUno {
@@ -21,7 +19,7 @@ html {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  background-color: rgb(24, 22, 22);
+  background-color: $color-fondo;
 }
 
 nav {
@@ -29,21 +27,20 @@ nav {
   display: inline-block;
   display: flex;
   color: rgb(221, 167, 167);
+    ul {
+        list-style-type: none;
+        li {
+            display: inline-block;
+            font-family: "Jockey One", sans-serif;
+            padding: 30px;
+            font-size: 5px;
+            position: relative;
+            top: 7px;
+            color:$color-fuente;
+          }
+    }
 }
 
-nav ul {
-  list-style-type: none;
-}
-
-nav ul li {
-  display: inline-block;
-  font-family: "Jockey One", sans-serif;
-  padding: 30px;
-  font-size: 5px;
-  position: relative;
-  top: 7px;
-  color: rgb(252, 238, 238);
-}
 
 .logo {
   position: relative;
@@ -52,13 +49,13 @@ nav ul li {
 
 a {
   text-decoration: none;
-  color: rgb(228, 224, 222);
+  color: $color-fuente;
   font-size: 20px;
 }
 
 main {
   grid-area: main;
-  background-color: rgb(24, 22, 22);
+  background-color: $color-fondo;
 }
 
 .tituloPrincipal {
@@ -76,7 +73,7 @@ main {
 }
 
 h1 {
-  color: white;
+  color: $color-fuente;
   font-family: "Jockey One", sans-serif;
   font-size: 50px;
   padding: 40px;
@@ -84,16 +81,16 @@ h1 {
 
 .seccionUno {
   padding: 50px;
-  color: rgb(252, 238, 238);
+  color: $color-fuente;
   font-size: 13px;
-  background-color: rgb(24, 22, 22);
+  background-color:$color-fondo;
 }
 
 .seccionDos {
   padding: 50px;
-  color: rgb(252, 238, 238);
+  color: $color-fuente;
   font-size: 13px;
-  background-color: rgb(24, 22, 22);
+  background-color:$color-fondo;
 }
 
 .prensa {
@@ -102,19 +99,19 @@ h1 {
 }
 
 legend {
-  color: rgb(252, 238, 238);
+  color: $color-fuente;
   font-family: "Jockey One", sans-serif;
 }
 
 h2 {
-  color: rgb(252, 238, 238);
+  color: $color-fuente;
   font-family: "Jockey One", sans-serif;
   font-size: 20px;
   padding: 30px;
 }
 
 .actividadUno {
-  color: rgb(252, 238, 238);
+  color: $color-fuente;
   font-size: 20px;
   font-family: "Jockey One", sans-serif;
 }
@@ -122,7 +119,7 @@ h2 {
 fieldset {
   font-family: "Jockey One", sans-serif;
   font-size: 14px;
-  color: rgb(228, 224, 222);
+  color: $color-fuente;
   padding: 30px;
   margin: 30px;
 }
@@ -132,7 +129,7 @@ footer {
   padding: 10px;
   border: 10px;
   text-align: center;
-  background-color: rgb(24, 22, 22);
+  background-color: $color-fondo;
   bottom: 0;
 }
 

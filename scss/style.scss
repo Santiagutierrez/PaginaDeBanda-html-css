@@ -1,138 +1,14 @@
+
+/* variables */
 @import "./variables/variables";
+/* reset */
 @import "./base/reset";
-
-html {
-  text-align: center;
-  background-color: $color-fondo;
-}
-
-.gridsUno {
-  display: grid;
-  height: 100vh;
-  grid-template-areas: "header header header" "main main main" "footer footer footer";
-  grid-template-rows: 80px auto auto;
-}
-
-.padreFlex {
-  grid-area: header;
-  display: inline-block;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  background-color: $color-fondo;
-}
-
-nav {
-  grid-area: navbar;
-  display: inline-block;
-  display: flex;
-  color: rgb(221, 167, 167);
-    ul {
-        list-style-type: none;
-        li {
-            display: inline-block;
-            font-family: "Jockey One", sans-serif;
-            padding: 30px;
-            font-size: 5px;
-            position: relative;
-            top: 7px;
-            color:$color-fuente;
-          }
-    }
-}
-
-
-.logo {
-  position: relative;
-  top: 1%;
-}
-
-a {
-  text-decoration: none;
-  color: $color-fuente;
-  font-size: 20px;
-}
-
-main {
-  grid-area: main;
-  background-color: $color-fondo;
-}
-
-.tituloPrincipal {
-  font-family: "Climate Crisis", cursive;
-  text-align: center;
-  padding: 15px;
-  position: fixed;
-  bottom: 60px;
-  display: block;
-  color: white;
-}
-
-.gifIndex {
-  object-fit: cover;
-}
-
-h1 {
-  color: $color-fuente;
-  font-family: "Jockey One", sans-serif;
-  font-size: 50px;
-  padding: 40px;
-}
-
-.seccionUno {
-  padding: 50px;
-  color: $color-fuente;
-  font-size: 13px;
-  background-color:$color-fondo;
-}
-
-.seccionDos {
-  padding: 50px;
-  color: $color-fuente;
-  font-size: 13px;
-  background-color:$color-fondo;
-}
-
-.prensa {
-  font-family: "Kanit", sans-serif;
-  font-size: 17px;
-}
-
-legend {
-  color: $color-fuente;
-  font-family: "Jockey One", sans-serif;
-}
-
-h2 {
-  color: $color-fuente;
-  font-family: "Jockey One", sans-serif;
-  font-size: 20px;
-  padding: 30px;
-}
-
-.actividadUno {
-  color: $color-fuente;
-  font-size: 20px;
-  font-family: "Jockey One", sans-serif;
-}
-
-fieldset {
-  font-family: "Jockey One", sans-serif;
-  font-size: 14px;
-  color: $color-fuente;
-  padding: 30px;
-  margin: 30px;
-}
-
-footer {
-  grid-area: footer;
-  padding: 10px;
-  border: 10px;
-  text-align: center;
-  background-color: $color-fondo;
-  bottom: 0;
-}
-
+/* layout */
+@import "./layout/nav";
+@import "./layout/footer";
+@import "./layout/body";
+@import "./layout/main";
+/* media queries */
 @media screen and (max-width: 768px) {
   .gridsUno {
     grid-template-areas: "header header header" "main main main" "footer footer footer";

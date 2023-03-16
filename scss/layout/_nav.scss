@@ -1,0 +1,38 @@
+.padreFlex {
+    grid-area: header;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: $color-fondo;
+  }
+
+nav {
+    grid-area: navbar;
+    display: inline-block;
+    display: flex;
+    color: rgb(221, 167, 167);
+      ul {
+          list-style-type: none;
+          li {
+              display: inline-block;
+              font-family: "Jockey One", sans-serif;
+              padding: 30px;
+              font-size: 5px;
+              position: relative;
+              top: 7px;
+              color:$color-fuente;
+            }
+      }
+  }
+
+.logo {
+    position: relative;
+    top: 1%;
+}
+
+a {
+    text-decoration: none;
+    color: $color-fuente;
+    font-size: 20px;
+  }

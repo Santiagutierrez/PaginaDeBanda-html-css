@@ -1,0 +1,11 @@
+html {
+    text-align: center;
+    background-color: $color-fondo;
+  }
+
+.gridsUno {
+    display: grid;
+    height: 100vh;
+    grid-template-areas: "header header header" "main main main" "footer footer footer";
+    grid-template-rows: 80px auto auto;
+  }

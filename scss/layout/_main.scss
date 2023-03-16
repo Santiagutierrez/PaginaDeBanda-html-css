@@ -1,0 +1,70 @@
+main {
+    grid-area: main;
+    background-color: $color-fondo;
+  }
+  
+  .tituloPrincipal {
+    font-family: "Climate Crisis", cursive;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 60px;
+    display: block;
+    color: white;
+  }
+  
+  .gifIndex {
+    object-fit: cover;
+  }
+  
+  h1 {
+    color: $color-fuente;
+    font-family: "Jockey One", sans-serif;
+    font-size: 50px;
+    padding: 40px;
+  }
+
+  h2 {
+    color: $color-fuente;
+    font-family: "Jockey One", sans-serif;
+    font-size: 20px;
+    padding: 30px;
+  }
+
+  .seccionUno {
+    padding: 50px;
+    color: $color-fuente;
+    font-size: 13px;
+    background-color:$color-fondo;
+  }
+  
+  .seccionDos {
+    padding: 50px;
+    color: $color-fuente;
+    font-size: 13px;
+    background-color:$color-fondo;
+  }
+  
+  .prensa {
+    font-family: "Kanit", sans-serif;
+    font-size: 17px;
+  }
+
+  fieldset {
+    font-family: "Jockey One", sans-serif;
+    font-size: 14px;
+    color: $color-fuente;
+    padding: 30px;
+    margin: 30px;
+  }
+
+  .actividadUno {
+    color: $color-fuente;
+    font-size: 20px;
+    font-family: "Jockey One", sans-serif;
+  }
+  
+  legend {
+    color: $color-fuente;
+    font-family: "Jockey One", sans-serif;
+  }

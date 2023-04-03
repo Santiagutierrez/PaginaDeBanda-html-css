@@ -11,12 +11,14 @@
 /* media queries */
 @media screen and (max-width: 768px) {
   .gridsUno {
-    grid-template-areas: "header header header" "main main main" "footer footer footer";
-    grid-template-columns: 150px;
+    display: grid;
+    grid-template-areas: "header header" "main main" "footer footer";
+    grid-template-columns: 187px;
     grid-template-rows: auto auto;
   }
   .padreFlex {
     justify-content: left;
+    display: block;
   }
   h1 {
     padding: 10px;
@@ -30,7 +32,9 @@
   }
   nav ul {
     position: relative;
-    left: 232px;
+    left: 108px;
+    display: inline-grid;
+    justify-content: center;
   }
   .enlacesNavMq {
     width: 50px;
@@ -42,11 +46,26 @@
   .logo {
     left: 16px;
   }
+  .menuHamburguesa {
+    top: 10px;
+  }
   .container {
     display: block;
   }
   .contenedor {
     display: block;
+  }
+  .seccionUno {
+    padding: 21px;
+  }
+  .seccionDos {
+    padding: 21px;
+  }
+  fieldset {
+    margin: 0;
+  }
+  footer {
+    position:relative;
   }
 }
 

@@ -152,16 +152,14 @@ footer {
 
 @media screen and (max-width: 768px) {
   .gridsUno {
+    display: grid;
     grid-template-areas: "header header" "main main" "footer footer";
     grid-template-columns: 187px;
     grid-template-rows: auto auto;
   }
   .padreFlex {
     justify-content: left;
-  }
-  nav {
-    position: fixed;
-    top: 0;
+    display: block;
   }
   h1 {
     padding: 10px;
@@ -209,6 +207,9 @@ footer {
   }
   fieldset {
     margin: 0;
+  }
+  footer {
+    position:relative;
   }
 }
 

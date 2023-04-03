@@ -99,6 +99,13 @@ h2 {
   padding: 30px;
 }
 
+h4 {
+  color: rgba(243, 229, 201, 0.938);
+  font-family: "Kanit", sans-serif;
+  font-size: 14px;
+  padding: 8px;
+}
+
 .seccionUno {
   padding: 50px;
   color: rgb(252, 238, 238);
@@ -135,6 +142,11 @@ fieldset {
 legend {
   color: rgb(252, 238, 238);
   font-family: "Jockey One", sans-serif;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: auto auto;
 }
 
 /* media queries */

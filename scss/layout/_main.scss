@@ -31,6 +31,13 @@ main {
     padding: 30px;
   }
 
+  h4 {
+    color: rgba(243, 229, 201, 0.938);
+    font-family: "Kanit", sans-serif;
+    font-size: 14px;
+    padding: 8px;
+  }
+
   .seccionUno {
     padding: 50px;
     color: $color-fuente;
@@ -67,4 +74,9 @@ main {
   legend {
     color: $color-fuente;
     font-family: "Jockey One", sans-serif;
+  }
+
+  .contenedor {
+    display: grid;
+    grid-template-columns: auto auto;
   }

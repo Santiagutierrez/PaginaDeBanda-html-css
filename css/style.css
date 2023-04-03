@@ -152,12 +152,16 @@ footer {
 
 @media screen and (max-width: 768px) {
   .gridsUno {
-    grid-template-areas: "header header header" "main main main" "footer footer footer";
-    grid-template-columns: 150px;
+    grid-template-areas: "header header" "main main" "footer footer";
+    grid-template-columns: 187px;
     grid-template-rows: auto auto;
   }
   .padreFlex {
     justify-content: left;
+  }
+  nav {
+    position: fixed;
+    top: 0;
   }
   h1 {
     padding: 10px;
@@ -168,6 +172,15 @@ footer {
   .imagenes {
     width: 50px;
     height: 400px;
+  }
+  nav ul {
+    position: relative;
+    left: 108px;
+    display: inline-grid;
+    justify-content: center;
+  }
+  nav ul li {
+    padding: 15px;
   }
   .enlacesNavMq {
     width: 50px;
@@ -187,6 +200,15 @@ footer {
   }
   .contenedor {
     display: block;
+  }
+  .seccionUno {
+    padding: 21px;
+  }
+  .seccionDos {
+    padding: 21px;
+  }
+  fieldset {
+    margin: 0;
   }
 }
 

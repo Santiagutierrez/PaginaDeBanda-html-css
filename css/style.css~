@@ -179,6 +179,12 @@ legend {
   .logo {
     left: 16px;
   }
+  .container {
+    display: block;
+  }
+  .contenedor {
+    display: block;
+  }
 }
 
 

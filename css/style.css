@@ -173,7 +173,7 @@ footer {
   }
   nav ul {
     position: relative;
-    left: 108px;
+    right: 25px;
     display: inline-grid;
     justify-content: center;
   }
